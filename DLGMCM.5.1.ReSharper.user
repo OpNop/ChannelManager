@@ -1,0 +1,294 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@MySql.Data.MySqlClient.MySqlHelper">
+      <Item value="EscapeString`0" priority="1" />
+      <Item value="ExecuteNonQuery`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="ToolBox.Log" priority="5" />
+      <Item value="_log" priority="24" />
+      <Item value="Console`0" priority="15" />
+      <Item value="DLG.ToolBox.Log" priority="0" />
+      <Item value="public" priority="6" />
+      <Item value="bool" priority="9" />
+      <Item value="int" priority="5" />
+      <Item value="var" priority="20" />
+      <Item value="productID" priority="1" />
+      <Item value="command" priority="40" />
+      <Item value="if" priority="8" />
+      <Item value="returnvar" priority="1" />
+      <Item value="return" priority="11" />
+      <Item value="false" priority="10" />
+      <Item value="else" priority="4" />
+      <Item value="true" priority="6" />
+      <Item value="catch" priority="3" />
+      <Item value="Exception`0" priority="1" />
+      <Item value="ex" priority="4" />
+      <Item value="hasMP3s`0" priority="0" />
+      <Item value="item" priority="25" />
+      <Item value="deleteItem`0" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="Product`0" priority="2" />
+      <Item value="deleteAttachments`0" priority="1" />
+      <Item value="string" priority="3" />
+      <Item value="product" priority="1" />
+      <Item value="try" priority="2" />
+      <Item value="sql" priority="0" />
+      <Item value="finally" priority="1" />
+      <Item value="e" priority="3" />
+      <Item value="ApplicationException`0" priority="1" />
+      <Item value="using" priority="2" />
+      <Item value="_db" priority="5" />
+      <Item value="IAsyncResult`0" priority="0" />
+      <Item value="result" priority="0" />
+      <Item value="queryReqult" priority="0" />
+      <Item value="usString" priority="0" />
+      <Item value="Utils`0" priority="5" />
+      <Item value="MySqlHelper`0" priority="1" />
+      <Item value="new" priority="10" />
+      <Item value="MySqlParameter`0" priority="2" />
+      <Item value="MySqlParameterCollection`0" priority="1" />
+      <Item value="MySql" priority="0" />
+      <Item value="DateTime`0" priority="0" />
+      <Item value="now" priority="1" />
+      <Item value="DateTime" priority="0" />
+      <Item value="this" priority="1" />
+      <Item value="Convert`0" priority="3" />
+      <Item value="psSKU" priority="0" />
+      <Item value="private" priority="5" />
+      <Item value="Array`0" priority="0" />
+      <Item value="_doNotUpdate" priority="0" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="continue" priority="0" />
+      <Item value="OdbcRowUpdatedEventArgs`0" priority="1" />
+      <Item value="lastUpdate" priority="0" />
+      <Item value="Int16`0" priority="0" />
+      <Item value="pPrice" priority="0" />
+      <Item value="MySqlException`0" priority="1" />
+      <Item value="checkConnection`0" priority="0" />
+      <Item value="MySqlCommand`0" priority="8" />
+      <Item value="sqlCommand" priority="1" />
+      <Item value="con" priority="1" />
+      <Item value="executeCommand`0" priority="2" />
+      <Item value="commandFile" priority="3" />
+      <Item value="_connectionString" priority="0" />
+      <Item value="static" priority="3" />
+      <Item value="MySqlConnection`0" priority="1" />
+      <Item value="_connection" priority="4" />
+      <Item value="MySqlConnection" priority="0" />
+      <Item value="connectionString" priority="0" />
+      <Item value="MySqlConnectionStringBuilder`0" priority="0" />
+      <Item value="MySqlDataReader`0" priority="0" />
+      <Item value="ExecuteCommand`0" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="MySqlCommand" priority="1" />
+      <Item value="sqlFile" priority="0" />
+      <Item value="switch" priority="0" />
+      <Item value="case" priority="2" />
+      <Item value="bl" priority="4" />
+      <Item value="break" priority="2" />
+      <Item value="default" priority="0" />
+      <Item value="sucess" priority="1" />
+      <Item value="timeToQuit" priority="1" />
+      <Item value="Environment`0" priority="0" />
+      <Item value="_bl" priority="0" />
+      <Item value="isclosing" priority="0" />
+      <Item value="NetPipeStyleUriParser`0" priority="0" />
+      <Item value="System" priority="0" />
+      <Item value="Net" priority="0" />
+      <Item value="FtpClient" priority="0" />
+      <Item value="DoUpload`0" priority="1" />
+      <Item value="file" priority="1" />
+      <Item value="decimal" priority="0" />
+      <Item value="fileInf" priority="0" />
+      <Item value="Math`0" priority="0" />
+      <Item value="dFileSize" priority="0" />
+      <Item value="in" priority="0" />
+      <Item value="files" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DLG.ToolBox.Log.Logger">
+      <Item value="AddError`0" priority="14" />
+      <Item value="AddDebug`0" priority="10" />
+      <Item value="AddInfo`0" priority="3" />
+      <Item value="AddNotice`0" priority="0" />
+      <Item value="AddWarning`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlCommand">
+      <Item value="ExecuteReader`0" priority="1" />
+      <Item value="CommandText" priority="2" />
+      <Item value="ExecuteNonQuery`0" priority="0" />
+      <Item value="ToString`0" priority="1" />
+      <Item value="Parameters" priority="24" />
+      <Item value="CommandType" priority="0" />
+      <Item value="Connection" priority="1" />
+      <Item value="Prepare`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlDataReader">
+      <Item value="Indexer" priority="0" />
+      <Item value="GetInt32`0" priority="0" />
+      <Item value="Read`0" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="4" />
+      <Item value="StackTrace" priority="0" />
+      <Item value="Source" priority="0" />
+      <Item value="InnerException" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Service.Product">
+      <Item value="Wholesale" priority="1" />
+      <Item value="SKU" priority="2" />
+      <Item value="ProductNo" priority="4" />
+      <Item value="MixAndMatch" priority="0" />
+      <Item value="IsOnSale" priority="3" />
+      <Item value="SalePrice" priority="3" />
+      <Item value="Price" priority="2" />
+      <Item value="InStock" priority="1" />
+      <Item value="LongDesc" priority="1" />
+      <Item value="UPC" priority="0" />
+      <Item value="ProdType" priority="0" />
+      <Item value="Weight" priority="0" />
+      <Item value="Description" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="ReadLine`0" priority="3" />
+      <Item value="WriteLine`0" priority="6" />
+      <Item value="Read`0" priority="0" />
+      <Item value="Write`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlConnection">
+      <Item value="CreateCommand`0" priority="1" />
+      <Item value="State" priority="1" />
+      <Item value="Close`0" priority="0" />
+      <Item value="Open`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlParameterCollection">
+      <Item value="AddWithValue`0" priority="17" />
+      <Item value="Indexer" priority="2" />
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlParameter">
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Service.Utils">
+      <Item value="MySqlEscape`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.ConnectionState">
+      <Item value="Closed" priority="0" />
+      <Item value="Open" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="IsDBNull`0" priority="0" />
+      <Item value="ToInt32`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Odbc.OdbcDataReader">
+      <Item value="GetFloat`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int16">
+      <Item value="TryParse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Substring`0" priority="2" />
+      <Item value="Equals`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlException">
+      <Item value="Number" priority="1" />
+      <Item value="Data" priority="0" />
+      <Item value="InnerException" priority="0" />
+      <Item value="StackTrace" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Service.BusinessLogic">
+      <Item value="shutDown`0" priority="1" />
+      <Item value="printStats`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="Exit`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Ceiling`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Service.File">
+      <Item value="FileServerPath" priority="1" />
+      <Item value="FileName" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A62C198B-D5F3-49DD-B5EF-378BD18FD161/f:frmMain.cs" caret="490" fromTop="1" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Utils.cs" caret="0" fromTop="0" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Settings.cs" caret="0" fromTop="0" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:MCMService.cs" caret="604" fromTop="15" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:MySqlWrapper.cs" caret="812" fromTop="30" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="8672" fromTop="20" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:MailWare.cs" caret="4250" fromTop="61" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Ftp.cs" caret="352" fromTop="0" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="6871" fromTop="12" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:BusinessLogic.cs" caret="2629" fromTop="11" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="7978" fromTop="23" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="8114" fromTop="11" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="8284" fromTop="17" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="9935" fromTop="14" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="7572" fromTop="28" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="8114" fromTop="9" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="8676" fromTop="22" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="368" fromTop="15" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="6830" fromTop="5" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="5971" fromTop="20" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="6821" fromTop="16" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="7078" fromTop="7" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="9511" fromTop="15" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="10060" fromTop="3" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="11225" fromTop="28" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="9228" fromTop="25" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="7534" fromTop="19" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="9065" fromTop="24" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="4965" fromTop="7" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="5252" fromTop="18" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="6195" fromTop="18" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="13692" fromTop="25" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="12392" fromTop="17" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="13126" fromTop="20" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:Product.cs" caret="9310" fromTop="28" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:MailWare.cs" caret="4250" fromTop="30" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:MailWare.cs" caret="4250" fromTop="2" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="6733" fromTop="17" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="5625" fromTop="16" />
+      <File id="EC239A30-F2D1-42E7-872B-C61ADF0249AA/f:PrestaShop.cs" caret="9356" fromTop="19" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

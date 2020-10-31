@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="A37B5E71-BF29-4FAD-A2FC-665228F61362" ModuleId="mp3Fixer" />
+  <Module PersistentId="System.Net.FtpClient, Version=1.0.4771.27498, Culture=neutral" ModuleId="System.Net.FtpClient" />
+</Modules>

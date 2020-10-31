@@ -1,0 +1,264 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:Program.cs" caret="445" fromTop="15" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:Form1.cs" caret="1457" fromTop="9" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mwODBC.cs" caret="412" fromTop="19" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="4746" fromTop="27" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:Product.cs" caret="345" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="1047" fromTop="21" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="8692" fromTop="23" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="8210" fromTop="9" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="7423" fromTop="27" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:Product.cs" caret="343" fromTop="12" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="5922" fromTop="19" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="7125" fromTop="25" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="5922" fromTop="15" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="5922" fromTop="13" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="247" fromTop="12" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="5922" fromTop="22" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="5204" fromTop="19" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="3064" fromTop="6" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="1047" fromTop="3" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="2203" fromTop="5" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="2875" fromTop="9" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="4108" fromTop="13" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="3836" fromTop="10" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="4405" fromTop="13" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="5851" fromTop="19" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="6237" fromTop="14" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="6841" fromTop="17" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="6086" fromTop="2" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="7499" fromTop="8" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="8134" fromTop="22" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="1592" fromTop="20" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="8048" fromTop="7" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="1609" fromTop="20" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:mp3FixThread.cs" caret="1399" fromTop="17" />
+      <File id="A37B5E71-BF29-4FAD-A2FC-665228F61362/f:Product.cs" caret="679" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="LogToCustomListener`0" priority="0" />
+      <Item value="public" priority="11" />
+      <Item value="void" priority="5" />
+      <Item value="FtpClient`0" priority="3" />
+      <Item value="new" priority="12" />
+      <Item value="FtpClient" priority="0" />
+      <Item value="TextBoxTraceListener`0" priority="0" />
+      <Item value="txtLog" priority="0" />
+      <Item value="_target" priority="5" />
+      <Item value="ftpConn" priority="1" />
+      <Item value="MessageBox`0" priority="0" />
+      <Item value="private" priority="9" />
+      <Item value="using" priority="4" />
+      <Item value="MySql.Data" priority="0" />
+      <Item value="db" priority="0" />
+      <Item value="OdbcConnection`0" priority="2" />
+      <Item value="Debug`0" priority="26" />
+      <Item value="Connect`0" priority="1" />
+      <Item value="string" priority="10" />
+      <Item value="File`0" priority="1" />
+      <Item value="_products" priority="2" />
+      <Item value="var" priority="17" />
+      <Item value="Product`0" priority="3" />
+      <Item value="List" priority="0" />
+      <Item value="sku" priority="1" />
+      <Item value="SKU" priority="0" />
+      <Item value="ProductNo" priority="0" />
+      <Item value="productno" priority="0" />
+      <Item value="Files" priority="1" />
+      <Item value="files" priority="0" />
+      <Item value="Product" priority="0" />
+      <Item value="mwReader" priority="0" />
+      <Item value="GetHashCode`0" priority="0" />
+      <Item value="Form1`0" priority="1" />
+      <Item value="static" priority="1" />
+      <Item value="mwODBC`0" priority="8" />
+      <Item value="if" priority="6" />
+      <Item value="instance" priority="2" />
+      <Item value="mwODBC" priority="0" />
+      <Item value="return" priority="7" />
+      <Item value="bool" priority="2" />
+      <Item value="mwConn" priority="2" />
+      <Item value="p" priority="2" />
+      <Item value="getProducts`0" priority="1" />
+      <Item value="List&lt;Product&gt;" priority="0" />
+      <Item value="List&lt;MP3&gt;" priority="0" />
+      <Item value="foreach" priority="4" />
+      <Item value="product" priority="15" />
+      <Item value="tSKU" priority="2" />
+      <Item value="for" priority="0" />
+      <Item value="_textBoxListener" priority="0" />
+      <Item value="i" priority="0" />
+      <Item value="String`0" priority="3" />
+      <Item value="do" priority="0" />
+      <Item value="doMp3Fix`0" priority="0" />
+      <Item value="false" priority="4" />
+      <Item value="folder" priority="1" />
+      <Item value="_ftpConn" priority="5" />
+      <Item value="file" priority="6" />
+      <Item value="track" priority="1" />
+      <Item value="uFileName" priority="5" />
+      <Item value="try" priority="3" />
+      <Item value="finally" priority="0" />
+      <Item value="s" priority="0" />
+      <Item value="FileStream`0" priority="0" />
+      <Item value="Open" priority="0" />
+      <Item value="Read" priority="0" />
+      <Item value="while" priority="0" />
+      <Item value="read" priority="0" />
+      <Item value="Buffer`0" priority="0" />
+      <Item value="byte" priority="0" />
+      <Item value="istream" priority="0" />
+      <Item value="Buffer" priority="1" />
+      <Item value="buf" priority="2" />
+      <Item value="Length" priority="3" />
+      <Item value="ostream" priority="0" />
+      <Item value="limit" priority="2" />
+      <Item value="break" priority="1" />
+      <Item value="true" priority="2" />
+      <Item value="else" priority="0" />
+      <Item value="catch" priority="1" />
+      <Item value="FtpException`0" priority="0" />
+      <Item value="mp3FixThread`0" priority="4" />
+      <Item value="ThreadExceptionDialog`0" priority="0" />
+      <Item value="ThreadStart" priority="0" />
+      <Item value="oFix" priority="0" />
+      <Item value="tFix" priority="0" />
+      <Item value="message" priority="0" />
+      <Item value="ret" priority="0" />
+      <Item value="TraceLogRetentionOption`0" priority="0" />
+      <Item value="DoUpload`0" priority="1" />
+      <Item value="ContextStaticAttribute`0" priority="0" />
+      <Item value="const" priority="0" />
+      <Item value="SQL_DEL_FILE" priority="1" />
+      <Item value="commandFile" priority="0" />
+      <Item value="MySqlCommand`0" priority="0" />
+      <Item value="commandDel" priority="0" />
+      <Item value="MySqlException`0" priority="1" />
+      <Item value="ex" priority="1" />
+      <Item value="in" priority="0" />
+      <Item value="mex" priority="0" />
+      <Item value="MySqlHelper`0" priority="0" />
+      <Item value="ExecuteCommand`0" priority="0" />
+      <Item value="commandAdd" priority="0" />
+      <Item value="object" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="AppendText`0" priority="1" />
+      <Item value="ScrollToCaret`0" priority="0" />
+      <Item value="Lines" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.FtpClient.FtpClient">
+      <Item value="Host" priority="0" />
+      <Item value="DirectoryExists`0" priority="0" />
+      <Item value="CreateDirectory`0" priority="0" />
+      <Item value="OpenWrite`0" priority="2" />
+      <Item value="FileExists`0" priority="1" />
+      <Item value="DeleteFile`0" priority="0" />
+      <Item value="Connect`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Boolean">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Odbc.OdbcConnection">
+      <Item value="CreateCommand`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="WriteLine`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="1" />
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Odbc.OdbcDataReader">
+      <Item value="GetInt32`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@mp3Fixer.mwODBC">
+      <Item value="Instance" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mp3Fixer.mwODBC">
+      <Item value="mwConn" priority="2" />
+      <Item value="Connect`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mp3Fixer.Product">
+      <Item value="ProductNo" priority="2" />
+      <Item value="SKU" priority="4" />
+      <Item value="Files" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Substring`0" priority="1" />
+      <Item value="ToCharArray`0" priority="0" />
+      <Item value="Remove`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Close`0" priority="0" />
+      <Item value="Write`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mp3Fixer.MP3">
+      <Item value="FileName" priority="1" />
+      <Item value="LocalFilePath" priority="0" />
+      <Item value="FileServerPath" priority="2" />
+      <Item value="FileDesc" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Read`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:mp3Fixer.mp3FixThread">
+      <Item value="DoMp3Fix`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="Start`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlCommand">
+      <Item value="Parameters" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlParameterCollection">
+      <Item value="AddWithValue`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlException">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MySql.Data.MySqlClient.MySqlHelper">
+      <Item value="EscapeString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
