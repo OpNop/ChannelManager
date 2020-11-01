@@ -12,16 +12,71 @@ namespace Service
         private static readonly Logger _log = Logger.getInstance();
         private OdbcConnection _db;
 
+        // Fix a couple of database issues that cause the update service to fail
+        public Boolean CleanDatabase()
+        {
+            var command = _db.CreateCommand();
+            var commandUpdate = _db.CreateCommand();
+
+            try
+            {
+                command.CommandText = "DROP TABLE IF EXISTS tmpListingTable; ";
+                command.CommandText += "CREATE TABLE tmpListingTable (tmpChannelNo Integer, tmpChannelAccountNo Integer, tmpListingNo Integer); ";
+                command.CommandText += "INSERT INTO tmpListingTable(tmpChannelNo, tmpChannelAccountNo, tmpListingNo)";
+                command.CommandText +=      "SELECT ChannelNo, ChannelAccountNo, ListingNo FROM ChannelListings WHERE SKU <> CAST(ListingNo AS CHAR(100));";
+                command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                _log.AddError("Error creating tmpListingTable");
+                _log.AddError(e.Message);
+                _log.AddError(e.StackTrace);
+            }
+
+            command.CommandText = "SELECT * FROM ChannelListings";
+            commandUpdate.CommandText = "SELECT * FROM tmpListingTable";
+            try
+            {
+                var mwUpdateReader = commandUpdate.ExecuteReader();
+                while (mwUpdateReader.Read())
+                {
+                    command.CommandText = "UPDATE ChannelListings SET SKU='" + mwUpdateReader.GetInt32(2) + "' WHERE ChannelNo=" + mwUpdateReader.GetInt32(0) + " AND ChannelAccountNo=" + mwUpdateReader.GetInt32(1) + " AND ListingNo=" + mwUpdateReader.GetInt32(2);
+                    command.ExecuteNonQuery();
+                }
+                mwUpdateReader.Close();
+            }
+            catch (Exception e)
+            {
+                _log.AddError("Error updating ChannelListings");
+                _log.AddError(e.Message);
+                _log.AddError(e.StackTrace);
+            }
+
+            command.CommandText = "UPDATE ChannelListings SET IsUseProductNoAsSKU=False";
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                _log.AddError(e.Message);
+                _log.AddError(e.StackTrace);
+            }
+            command.Dispose();
+            commandUpdate.Dispose();
+            return true;
+        }
+
         public List<Product> getProductsToUpdate()
         {
             var productsToUpdate = new List<Product>();
             var command = _db.CreateCommand();
 
             command.CommandText = "SELECT cl.ProductNo, cl.SKU, cl.Price, cl.IsUseCurrentRetailPrice, cl.IsOnSale, cl.SalePrice, cl.SaleStartDt, cl.SaleEndDt, cl.IsActive, cl.IsRemove, cl.IsDelete, cl.LaunchDt, cl.LastStockUpdateTime, cl.CategoryNo, p.LastUpdated, p.Price, p.UPC, p.Bin, p.StockNo, p.Weight, p.MixAndMatchCode, cl.IsUseCurrentInStock, p.InStock, p.LastInStockUpdated FROM ChannelListings cl INNER JOIN Products p ON cl.ProductNo=p.ProductNo WHERE (cl.isActive=true AND p.ProductNo=cl.ProductNo) AND ((p.LastUpdated > cl.LastStockUpdateTime) OR (cl.LastStockUpdateTime = null) OR (cl.LastStockUpdateTime < p.LastInStockUpdated))";
-            var mwReader = command.ExecuteReader();
 
             try
             {
+                var mwReader = command.ExecuteReader();
                 while (mwReader.Read())
                 {
                     var lastUpdate = Utils.processMwTime(mwReader.GetString(14));
@@ -144,7 +199,7 @@ namespace Service
             {
                 _log.AddInfo("Connecting to MW DB.......");
                 _db.Open();
-                _log.AddNotice("Success! Server version: " + _db.ServerVersion);
+                _log.AddNotice("Success! DB Server version: " + _db.ServerVersion);
                 return true;
             }
             catch (Exception ex)

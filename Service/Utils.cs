@@ -11,13 +11,14 @@ namespace Service
 
         public static DateTime processMwTime(string mwTime)
         {
+            string[] formats = { "yyyyMMddHHmmssFFF", "yyyyMMddHHmmss", "yyyyMMddHHmm" };
             //Mailware Date Format
             //YYYY/MM/DD HH:MM:SS.NNN
             //20090916114135766
             //2009/09/16 11:41:35.766
 
             DateTime thisDate;
-            if (!DateTime.TryParseExact(mwTime, "yyyyMMddHHmmssFFF", new System.Globalization.CultureInfo("en-US"), System.Globalization.DateTimeStyles.None, out thisDate))
+            if (!DateTime.TryParseExact(mwTime, formats, new System.Globalization.CultureInfo("en-US"), System.Globalization.DateTimeStyles.None, out thisDate))
             {
                 _log.AddError("Error Parsing Date. setting to beginning of time :P (" + mwTime + ")");
                 thisDate = new DateTime(0);

@@ -27,7 +27,7 @@ namespace Service
         }
 
         //Start the timers and get things going
-        public bool start ()
+        public bool start()
         {
             try
             {
@@ -61,9 +61,6 @@ namespace Service
             IsWorking = true;
             var sucess = true;
 
-            _log.AddDebug("CartDispatch Started");
-            _log.AddInfo("Updating " + productList.Count + " Product(s).");
-
             try
             {
                 foreach (var item in productList)
@@ -76,7 +73,7 @@ namespace Service
                     else if (item.IsActive)
                     {
                         //Go ahead and fill in all the items data
-                        _log.AddDebug("Getting Data for item " + item.SKU);
+                        _log.AddDebug("Getting Data for SKU " + item.SKU);
                         _mailWare.getExtData(item);
 
                         //find out if its a new add or update
@@ -118,15 +115,21 @@ namespace Service
             //skip if we are still running from before
             if(IsWorking)
                 return;
-            _log.AddNotice("onElapsedTimeUpload Called");
+
+            _log.AddNotice("Cleaning database...");
+            _mailWare.CleanDatabase();
+            _log.AddNotice("Database cleaned!");
+
+            _log.AddNotice("Looking for products to update...");
             var productsToUpdate = _mailWare.getProductsToUpdate();
 
             if (productsToUpdate.Count == 0)
             {
-                _log.AddDebug("No items to update this time.");
+                _log.AddDebug("No products to update at this time.");
                 return;
             }
-            _log.AddDebug("calling Dispatch");
+            _log.AddNotice("Updating " + productsToUpdate.Count + " Product(s).");
+
             var result = shoppingCartDispatch(productsToUpdate);
         }
 
@@ -136,7 +139,7 @@ namespace Service
                 return "Shutdown in progress, Program will exit after current product.";
 
             timeToQuit = true;
-            return "Shut down started, Program will exit after the curtrent product is finished";
+            return "Shut down started, Program will exit after the current product is finished";
         }
 
         public void printStats()

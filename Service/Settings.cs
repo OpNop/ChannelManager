@@ -53,9 +53,9 @@ namespace Service
                 OrderDownloadInt = Convert.ToInt32(RegKey.GetValue("orderDownloadInt", "1").ToString());
                 OperatorId       = Convert.ToInt32(RegKey.GetValue("operatorId", "1").ToString());
                 //FTP Settings
-                FtpServer        = RegKey.GetValue("ftpHost", "www.chandlermusic.com").ToString();
-                FtpUser          = RegKey.GetValue("ftpUser", "cmusicftp").ToString();
-                FtpPass          = RegKey.GetValue("ftpPass", "OH1ciiPP!").ToString();
+                FtpServer        = RegKey.GetValue("ftpHost", "localhost").ToString();
+                FtpUser          = RegKey.GetValue("ftpUser", "ftpUser").ToString();
+                FtpPass          = RegKey.GetValue("ftpPass", "ftpPass").ToString();
                 //Log Settings
                 LogDirectory     = RegKey.GetValue("logDir", @".\logs").ToString();
                 ShowNotice       = Convert.ToBoolean(RegKey.GetValue("showNotice", "true").ToString());

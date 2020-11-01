@@ -36,7 +36,7 @@ namespace Service
 
                 if (Settings.Error)
                 {
-                    Log.AddError("Settings are null, WTF did you do wrong??");
+                    Log.AddError("Settings are null, what did you do wrong??");
                     Console.WriteLine("Press any key to Exit!!");
                     Console.ReadLine();
                     return;

@@ -114,6 +114,7 @@ namespace Service
             if (System.IO.File.Exists(imagePath))
             {
                 _log.AddDebug("Uploading image: " + LocalFilePath + Images[0]);
+                _log.AddDebug("Destination: " + getServerImagePath(SKU) + "/" + newImageName);
                 ftpclient.Upload(LocalFilePath + Images[0], newImageName, getServerImagePath(SKU), true);
 
             }
@@ -181,10 +182,12 @@ namespace Service
                 decimal dFileSize = fileInf.Length / 1024;
                 var fileSize = Math.Ceiling(dFileSize);
 
+                _log.AddInfo(String.Format("{0}: {1} ({2})", Settings.FtpServer, Settings.FtpUser, Settings.FtpPass));
                 using (var ftpConn = new FtpClient())
                 {
-                    ftpConn.Host = "chandlermusic.com";
-                    ftpConn.Credentials = new NetworkCredential("cmusicftp", "OH1ciiPP!");
+                    ftpConn.Host = Settings.FtpServer;
+                    ftpConn.Credentials = new NetworkCredential(Settings.FtpUser, Settings.FtpPass);
+                    ftpConn.DataConnectionType = FtpDataConnectionType.AutoPassive;
                     ftpConn.Connect();
 
                     //Make the directory if not created
@@ -231,7 +234,7 @@ namespace Service
 
                             if (ostream != null)
                                 ostream.Close();
-                            _log.AddInfo("--Finished uploading.");
+                            _log.AddInfo("--Finished uploading");
                         }
                     }
                 }

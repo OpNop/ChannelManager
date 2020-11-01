@@ -412,9 +412,20 @@ namespace Service
             }
             catch(Exception e)
             {
-                _log.AddError("Error - executeCommand()");
-                _log.AddError(e.Message);
-                _log.AddDebug(e.InnerException.Message);
+                _log.AddError("Error - ExecuteCommand()");
+                _log.AddError("Message: " + e.Message);
+                if (e.InnerException != null)
+                {
+                    _log.AddDebug("InnerException Message");
+                    _log.AddDebug(e.InnerException.Message);
+                }
+/*
+                if (sqlCommand != null)
+                {
+                    _log.AddDebug("Parameters:");
+                    _log.AddDebug(sqlCommand.Parameters.ToString());
+                }
+*/
             }
         }
 
@@ -431,9 +442,20 @@ namespace Service
             }
             catch (Exception e)
             {
-                _log.AddError("Error - executeCommand()");
+                _log.AddError("Error - ExecuteReader()");
                 _log.AddError(e.Message);
-                _log.AddDebug(e.InnerException.Message);
+                if (e.InnerException != null)
+                {
+                    _log.AddDebug("InnerException Message");
+                    _log.AddDebug(e.InnerException.Message);
+                }
+/*
+                if (sqlCommand != null)
+                {
+                    _log.AddDebug("Parameters:");
+                    _log.AddDebug(sqlCommand.Parameters.ToString());
+                }
+*/
             }
             return null;
         }
