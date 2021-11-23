@@ -89,8 +89,7 @@ namespace Service
                         try
                         {
                             ServicePointManager.SecurityProtocol = (SecurityProtocolType)48 | (SecurityProtocolType)192 | (SecurityProtocolType)768 | (SecurityProtocolType)3072;
-                            //objRequest = (HttpWebRequest)WebRequest.Create("http://shop.shotsranch.com/proshopadmin/manualCreateThumbnails.php?imagename=" + newName + fileInf.Extension);
-                            objRequest = (HttpWebRequest)WebRequest.Create("https://www.chandlermusic.com/admincm/manualCreateThumbnails.php?imagename=" + newName + fileInf.Extension);
+                            objRequest = (HttpWebRequest)WebRequest.Create("https://chandlermusic.com/admincm/manualCreateThumbnails.php?imagename=" + newName + fileInf.Extension);
                             objRequest.Method = "GET";
                             objRequest.Timeout = 10000;
 
