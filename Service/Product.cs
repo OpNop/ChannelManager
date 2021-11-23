@@ -182,7 +182,7 @@ namespace Service
                 decimal dFileSize = fileInf.Length / 1024;
                 var fileSize = Math.Ceiling(dFileSize);
 
-                _log.AddInfo(String.Format("{0}: {1} ({2})", Settings.FtpServer, Settings.FtpUser, Settings.FtpPass));
+                //_log.AddInfo(String.Format("{0}: {1} ({2})", Settings.FtpServer, Settings.FtpUser, Settings.FtpPass));
                 using (var ftpConn = new FtpClient())
                 {
                     ftpConn.Host = Settings.FtpServer;
