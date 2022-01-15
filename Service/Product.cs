@@ -99,6 +99,12 @@ namespace Service
             InStock                 = Convert.IsDBNull(recordSet.GetValue(22)) ? 0 : Convert.ToInt32(recordSet.GetValue(22));
             LastInStockUptated      = Convert.IsDBNull(recordSet.GetValue(23)) ? new DateTime(0) : Utils.processMwTime(recordSet.GetString(23));
 
+            //fix for -1 in InStock
+            if(InStock < 0)
+            {
+                InStock = 0;
+            }
+
             //set Price to the price we want to use
             Price = IsUseCurrentRetailPrice ? RealPrice : CLPrice;
 
