@@ -56,6 +56,34 @@ namespace Service
             }
         }
 
+        public void forceRun()
+        {
+            onElapsedTimeUpload(null, null);
+        }
+
+        public void pause(bool stop)
+        {
+            if (stop)
+            {
+                _tmrUpload.Stop();
+                Console.Title = string.Format("DLG MCM Service Ver ({0}) - Stopped", Utils.buildDate());
+                _log.AddInfo($"Product update timer is stopped.");
+            }
+            else
+            {
+                _tmrUpload.Start();
+                Console.Title = string.Format("DLG MCM Service Ver ({0})", Utils.buildDate());
+                _log.AddInfo($"Product update timer is running.");
+            }
+        }
+
+        public void forceUpdate(string product)
+        {
+            _log.AddInfo($"Forcing update of Product: {product}");
+            _mailWare.forceUpdate(product);
+            onElapsedTimeUpload(null, null);
+        }
+
         private bool shoppingCartDispatch(ICollection<Product> productList)
         {
             IsWorking = true;

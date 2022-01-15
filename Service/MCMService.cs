@@ -88,9 +88,32 @@ namespace Service
                 {
                     _bl.printStats();
                 }
+                else if (command.Equals("runnow"))
+                {
+                    _bl.forceRun();
+                }
+                else if (command.Equals("pause"))
+                {
+                    _bl.pause(true);
+                }
+                else if (command.Equals("resume"))
+                {
+                    _bl.pause(false);
+                }
+                else if (command.StartsWith("force"))
+                {
+                    var splitCommand = command.Split(' ');
+                    if(splitCommand.Length == 1 || splitCommand[1] == "")
+                    {
+                        Console.WriteLine("Invalid product");
+                    } else
+                    {
+                        _bl.forceUpdate(splitCommand[1]);
+                    }
+                }
                 else
                 {
-                    Console.WriteLine(string.Format("'{0}' No such command.", command));
+                    Console.WriteLine($"Unknown command: '{command}'. Valid commands are 'quit','exit','runnow','pause',''resume'");
                 }
             }
         }

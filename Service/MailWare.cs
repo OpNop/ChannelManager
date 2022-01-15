@@ -130,6 +130,13 @@ namespace Service
             command.ExecuteNonQuery();
         }
 
+        public void forceUpdate(string productNo)
+        {
+            var command = _db.CreateCommand();
+            command.CommandText = "UPDATE Products SET LastUpdated='" + Utils.createMwTime(DateTime.Now) + "' WHERE ProductNo='" + productNo + "'";
+            command.ExecuteNonQuery();
+        }
+
         public List<File> getFileData(Product item)
         {
             var files = new List<File>();
